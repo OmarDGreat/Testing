@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: rgba(49, 52, 61, 255);
+  --secondaryColor: #eeeef7;
+  --thirdColor: rgba(146, 204, 206, 255);
+
+  --textColor: rgba(68, 88, 119, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--thirdColor);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+li {
+  list-style: none;
+  border-bottom: 4px solid var(--thirdColor);
+}
+
+.text-with-background {
+  background-color: var(--thirdColor);
+  color: var(--primaryColor);
+}
+
+/* NAV START */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--primaryColor);
+}
+
+header > h1 {
+  padding: 0px 30px 0px 70px;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-right: 100px;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav > ul {
+  text-align: right;
+}
+
+/* NAV END */
+
+/* Banner Start */
+
+.hero-section {
+  height: 450px;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero-text {
+  height: 400px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#text-subtitle {
+  font-size: 40px;
+  padding: 20px 35px;
+  border-radius: 10px;
+}
+
+/* BANNER END */
+
+/* Section Header START*/
+
+.section-header {
+  font-size: 60px;
+  color: var(--textColor);
+}
+
+.content-section {
+  margin: 10px 40px;
+  border-left: 10px solid var(--primaryColor);
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.section-container aside {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+.section-container section {
+  width: 60%;
+}
+
+#large-img {
+  max-width: 90%;
+  height: auto;
+  border: 5px solid var(--thirdColor);
+}
+
+.big-img-gallery {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-gallery {
+  padding: 0 6px;
+  float: left;
+  width: 49.99999%;
+  margin: 6px 0;
+}
+
+#smaller-img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border: 5px solid var(--thirdColor);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* Section Header END*/
